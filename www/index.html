@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./components/main.js"></script>
+    <title>Projeto estacionamento</title>
+</head>
+
+<body>
+    <img src="css/pare.png" alt="descrição da imagem">
+
+    <div class="select-menu" id="categoria">
+        <div class="select-btn" onclick="selecionarC()">
+            <span class="sBtn-text" id="selecione-categoria">Selecione a categoria</span>
+            <i class="bx bx-chevron-down"></i>
+        </div>
+        <ul class="options">
+            <li class="option">
+                <span class="option-text" id="Subcompacto">Subcompacto</span>
+            </li>
+            <li class="option">
+                <span class="option-text" id="Compacto">Compacto</span>
+            </li>
+            <li class="option">
+                <span class="option-text" id="Hatch">Hatch</span>
+            </li>
+            <li class="option">
+                <span class="option-text" id="Sedan">Sedan</span>
+            </li>
+            <li class="option">
+                <span class="option-text" id="SUV">SUV</span>
+            </li>
+            <li class="option">
+                <span class="option-text" id="Pickup">Pick-up</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="select-menu2" id="hora">
+        <div class="select-btn2" onclick="selecionarH()">
+            <span class="sBtn-text2" id="selecione-hora">Selecione a hora</span>
+            <i class="bx bx-chevron-down"></i>
+        </div>
+        <ul class="options2">
+            <li class="option2">
+                <span class="option-text2" id="hora-1" value="1">1</span>
+            </li>
+            <li class="option2">
+                <span class="option-text2" id="hora-2" value="2">2</span>
+            </li>
+            <li class="option2">
+                <span class="option-text2" id="hora-3" value="3">3</span>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <input type="text" id="placa" oninput="formatarInput(this)" minlength="8" maxlength="8" placeholder="AAA-1234">
+    <br>
+    <button type="submit" onclick="verificarInput()">Enviar</button>
+    <br>
+    <div id="resultado"></div>
+
+<div id="tela" class="escondido" onclick="fechar()">
+  <h1>Confime as informações</h1>
+  <p>Tela</p>
+  <div id="resultado1"></div>
+</div>
+</body>
+
+</html>

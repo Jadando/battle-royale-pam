@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background:  #fff;
+   background:  #1D1D1D;
+}
+
+input[type="text"]
+{
+    display: flex;
+    width: 380px;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    border-color: #00904a;
+}
+
+button {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#00904a ;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+#resultado{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #00904a;
+    display: flex;
+    margin: 0 auto;
+}
+
+.select-menu,
+.select-menu2 {
+    width: 380px;
+    margin: 150px auto;
+}
+
+.select-menu .select-btn,
+.select-menu2 .select-btn2 {
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #00904a;
+}
+
+.select-btn i {
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+.select-menu.active .select-btn i
+.select-menu2.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.select-menu .options,
+.select-menu2 .options2 {
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.select-menu.active .options,
+.select-menu2.active .options2 {
+    display: block;
+}
+
+.options .option,
+.options2 .option2 {
+    display: flex;
+    height: 55px;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+
+.options .option:hover,
+.options2 .option2:hover {
+    background: #F2F2F2;
+}
+
+.option .option-text,
+.option2 .option-text2 {
+    font-size: 18px;
+    color: #333;
+}
+
+img {
+    position: relative;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+
+.escondido {
+  display: none;
+}
+
+#tela {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 999
+}
+
+#tela h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#tela p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#tela button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#tela button:hover {
+  background-color: #0062cc;
+}
